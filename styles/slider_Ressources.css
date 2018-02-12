@@ -1,0 +1,11 @@
+/* positionnement des images */
+img{
+  position: absolute;
+  width: 700px;
+  height: 700px;
+}
+/* positionnement des bouttons */
+.buttons{
+  position: absolute;
+  margin-top: 900px;
+}
