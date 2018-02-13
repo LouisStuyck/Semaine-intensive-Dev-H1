@@ -197,6 +197,40 @@ main div.block div span.price {
   font-weight: bolder;
 }
 
+.rightcloth{
+  color: white;
+  font-size: komtulsan;
+  overflow: hidden;
+  right: 0;
+  height:228px;
+  width: 930px;
+  font-family: 'Della Respira', serif;
+  margin-left: 10px;
+}
+.rightcloth span{
+  width:komtulsan;
+  height: komtulsan;
+  background-color: komtulsen;
+}
+.leftcloth{
+  color: white;
+  font-size: komtulsan;
+  overflow: hidden;
+  left: 0;
+  height:228px;
+  width: 930px;
+  font-family: 'Della Respira', serif;
+  margin-right: 10px;
+}
+.leftcloth span{
+  width:komtulsan;
+  height: komtulsan;
+background-color: komtulsen;
+}
+.lastdivs{
+  display: flex;
+}
+
 /*******************
 
       FOOTER
