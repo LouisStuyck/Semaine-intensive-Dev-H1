@@ -52,6 +52,7 @@ header nav ul li {
 header nav ul li a {
   text-decoration: none;
   color: white;
+  font-family: 'Roboto', sans-serif;
 }
 
 header nav ul li:hover{
@@ -94,6 +95,7 @@ header nav ul li ul li:hover{
 
 header nav ul li ul li a {
   margin:0 0 0 20px;
+  font-family: 'Roboto', sans-serif;
 }
 
 header nav ul li ul li:hover a {
@@ -107,7 +109,7 @@ header nav ul li ul li:hover a {
 *******************/
 
 main {
-  margin: 70px auto;
+  margin: 0 auto;
 }
 
 main div.informations {
@@ -157,6 +159,7 @@ main div.block div button:hover {
   background-color: white;
   color: black;
   border: solid #de8496 2px;
+  transition:all 0.2s ease-in;
 }
 
 main div.block div span.price {
