@@ -1,0 +1,55 @@
+* {
+  font-family: 'Della Respira', serif;
+}
+
+body {
+  margin: 0 auto;
+}
+/*******************
+
+      HEADEReeee
+
+*******************/
+
+header {
+  background-color: #de8496;
+  height: 150px;
+}
+
+header img {
+  height: 125px;
+}
+
+header nav ul{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0 200px;
+}
+
+header nav ul li {
+  margin-top: 20px;
+}
+
+header nav ul li::after{
+  content: "|";
+  margin-left: 40px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+/*******************
+
+       MAIN
+
+*******************/
+
+/*******************
+
+      FOOTER
+
+*******************/
