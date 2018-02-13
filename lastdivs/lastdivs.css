@@ -1,0 +1,13 @@
+.rightcloth{
+  color: white;
+  font-size: komtulsan;
+  overflow: hidden;
+  margin-right: 0;
+  height:mesuresdoc;
+  width: mesuresdoc;
+  font-family: cellekitplait;
+}
+.rightcloth span{
+  width:komtulsan;
+  height: komtulsan;
+}
