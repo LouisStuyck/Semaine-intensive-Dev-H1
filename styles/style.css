@@ -4,6 +4,7 @@
 
 body {
   margin: 0 auto;
+  background: #FBF4F4;
 }
 /*******************
 
@@ -68,7 +69,7 @@ header nav ul li ul{
   display: none;
   position: absolute;
   margin: 0;
-  top: 100%;
+  top: 92%;
   left:0px;
   padding:0;
 }
@@ -82,10 +83,11 @@ header nav ul li ul li{
   width : 200px;
   text-decoration: none;
   display:block;
-  padding:10px 10px 10px 10px;
+  padding:10px;
   transition:all 0.2s ease-in;
   position:relative;
   margin: 0 auto;
+  z-index: 1000;
 }
 
 header nav ul li ul li:hover{
@@ -109,37 +111,67 @@ header nav ul li ul li:hover a {
 main {
   margin: 70px auto;
 }
-
+main div.ContainerSlider{
+  height: 543px;
+  margin:0;
+}
 main div.informations {
-  height: 200px;
+  height: 213px;
   background-color: grey;
-}
-main div.informations div {
-  display: inline-block;
+overflow: hidden;
 }
 
-main div.informations div p {
-  width: 70%;
-  float: right;
+main div.informations div {
+
+}
+main div.informations img.couture{
+  position: relative;
+  overflow: hidden;
+}
+
+main div.informations div img{
+  left: 200px;
+  top: 820px;
+  position: absolute;
+}
+
+main div.informations div h2{
+  width: 50%;
+  top:860px;
+  left: 500px;
+  font-family: 'Roboto', sans-serif;
+  position: absolute;
+  color:white;
+}
+
+main div.informations div h2 a{
+  text-decoration: none;
+  color:white;
+  font-family: 'Roboto', sans-serif;
 }
 
 main h1 {
   text-align: center;
+  margin:30px 0 50px 0;
 }
 
 main div.block {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  width: 90%;
+  width: 80%;
   margin: auto;
+}
+
+main div.block img{
+  width:320px;
 }
 
 main div.block div {
   background-color: white;
   color: black;
   font-family: sans-serif;
-  height: 350px;
+  height: 445px;
   width: 350px;
   border: solid #de8496 2px;
   text-align: center;
@@ -147,10 +179,12 @@ main div.block div {
 
 main div.block div button {
   background-color: #de8496;
-  height: 30px;
-  width: 100px;
+  font-size: 30px;
+  height: 56px;
+  width: 233px;
   color: white;
   border: none;
+  border-radius: 10px;
 }
 
 main div.block div button:hover {
@@ -163,8 +197,99 @@ main div.block div span.price {
   font-weight: bolder;
 }
 
+.rightcloth{
+  color: black;
+  font-size: 24px;
+  overflow: hidden;
+  right: 0px;
+  height:228px;
+  width: 930px;
+  font-family: 'Della Respira', serif;
+  margin-left: 20px;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+}
+.rightcloth img{
+  width: 100%;
+}
+.personalize{
+  width:233px;
+  height: 56px;
+  background-color: #de8496;
+  z-index: 1;
+  position: absolute;
+  margin-top: 150px;
+  font-size: 30px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+}
+.rightcloth p{
+  z-index: 1;
+  position: absolute;
+  margin-top: 100px;
+  color: white;
+
+}
+.leftcloth{
+  color: black;
+  font-size: 24px;
+  overflow: hidden;
+  left: 0;
+  height:228px;
+  width: 930px;
+  font-family: 'Della Respira', serif;
+  margin-right: 20px;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+}
+.leftcloth img{
+  width: 100%
+}
+.order{
+  width:233px;
+  height: 56px;
+  background-color: #de8496;
+  z-index: 1;
+  position: absolute;
+  margin-top: 150px;
+  font-size: 30px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+}
+.leftcloth p{
+  z-index: 1;
+  position: absolute;
+  margin-top: 100px;
+  color: white
+}
+.lastdivs{
+  margin-top: 78px;
+  display: flex;
+  width: 100%;
+}
+
+.personalize:hover,.order:hover{
+  background-color: white;
+  color: black;
+  border: solid #de8496 2px;
+}
 /*******************
 
       FOOTER
 
 *******************/
+.FOOTER{
+  height: 144px;
+  width: 100%;
+  background-color: black;
+  color: white;
+  display: flex;
+  font-size: 18px;
+}
+.FOOTER span{
+  margin-left: 300px;
+}
