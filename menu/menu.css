@@ -1,0 +1,65 @@
+* {
+  font-family: 'Della Respira', serif;
+}
+
+body {
+  margin: 0 auto;
+  background: #FBF4F4;
+}
+/*******************
+
+      HEADER
+
+*******************/
+
+header {
+  background-color: #EDB2B2;
+  height: 185px;
+  margin: 0;
+}
+
+header div.logo_account{
+  display: flex;
+  justify-content: center;
+}
+
+header div.logo_account img {
+  height: 125px;
+}
+
+header nav{
+  background-color: #DE8496;
+  height: 361px;
+  width: 261px;
+  margin:0 auto;
+  color: white;
+  font-size: 22px;
+}
+header nav ul{
+  margin : 0 auto;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-direction: column;
+  padding:0;
+}
+
+header nav ul li {
+  padding: 15px 30px;
+  position: relative;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+header nav ul li:hover{
+  background:white;
+  transition:all 0.2s ease-in;
+}
+
+header nav ul li:hover a {
+  text-decoration: none;
+  color: black;
+}
