@@ -1,0 +1,67 @@
+*{
+  transition: all 0.5s;
+}
+html, body {
+  margin: 0 auto;
+  padding: 0 auto;
+}
+.img .slidImage{
+  height: 544px;
+  width: 1920px;
+}
+.buttons{
+  position: absolute;
+  display: flex;
+  top: 680px;
+  left: 47%;
+}
+
+.slider {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  height: 543px;
+  top: 204px;
+  position: absolute;
+  z-index: 0;
+}
+.slidButtons{
+  width: 30px;
+  margin-right: 10px;
+}
+.lilButton{
+  left: 75px;
+}
+#rightSlider{
+  position: absolute;
+  top: 465px;
+  right: 48px;
+}
+#rightslider{
+  width:50px;
+}
+#leftSlider{
+  position: absolute;
+  top: 465px;
+  left: 48px;
+}
+#leftslider{
+  width:50px;
+}
+.decouvrir a{
+  font-family: 'Della Respira', serif;
+  color: white;
+  position:absolute;
+  z-index: 1000;
+  text-decoration: none;
+  font-size: 48px;
+  border-radius: 5px;
+  top: 600px;
+  left: 41%;
+  width: 338px;
+  height: 65px;
+  text-align: center;
+
+}
