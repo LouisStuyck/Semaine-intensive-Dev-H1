@@ -3,7 +3,6 @@
 }
 
 body {
-  margin: 0 auto;
   background: #FBF4F4;
 }
 /*******************
@@ -14,17 +13,91 @@ body {
 
 header {
   background-color: #EDB2B2;
-  height: 185px;
-  margin: 0 auto;
+  width: 100%;
+}
+.socialnetworks{
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+.socialnetworks img{
+  width: 40px;
+}
+#burgButt{
+  position: absolute;
+  visibility: hidden;
+}
+#burgMenu{
+  visibility: hidden;
+  position: absolute;
+  z-index: 16000;
+}
+header .menuVert{
+  background-color: #DE8496;
+  height: 361px;
+  width: 261px;
+  margin:0 auto;
+  color: white;
+  font-size: 22px;
+}
+header .menuVert ul{
+  margin : 0 auto;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-direction: column;
+  padding:0;
 }
 
-header div.logo_account{
+header .menuVert ul li {
+  padding: 15px 30px;
+  position: relative;
+}
+
+header .menuVert ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+header .menuVert ul li:hover{
+  background:white;
+  transition:all 0.2s ease-in;
+}
+
+header .menuVert ul li:hover a {
+  text-decoration: none;
+  color: black;
+}
+
+header div.logo{
   display: flex;
   justify-content: center;
 }
 
-header div.logo_account img {
+header div.logo img {
   height: 125px;
+}
+
+header div.account{
+  position: absolute;
+  right: 100px;
+  height: 50px;
+  top: 30px;
+}
+
+header div.account a{
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center;
+}
+
+header div.account a:hover{
+  color: white;
+}
+
+header div.account a img{
+  width: 50px;
 }
 
 header nav{
@@ -69,7 +142,7 @@ header nav ul li ul{
   display: none;
   position: absolute;
   margin: 0;
-  top: 100%;
+  top: 92%;
   left: -200px;
 }
 
@@ -110,6 +183,7 @@ header nav ul li ul li:hover a {
 
 main {
   margin: 70px auto;
+  width: 100%;
 }
 main div.ContainerSlider{
   height: 543px;
@@ -117,27 +191,27 @@ main div.ContainerSlider{
 }
 main div.informations {
   height: 213px;
-  background-color: grey;
-overflow: hidden;
+  background-color:;
+  overflow: hidden;
 }
 
 main div.informations div {
-
+  display: flex;
 }
 main div.informations img.couture{
   position: relative;
   overflow: hidden;
+  width: 100%;
 }
 
 main div.informations div img{
   left: 200px;
-  top: 820px;
+  top: 795px;
   position: absolute;
 }
 
 main div.informations div h2{
-  width: 50%;
-  top:860px;
+  top:850px;
   left: 500px;
   font-family: 'Roboto', sans-serif;
   position: absolute;
@@ -150,6 +224,26 @@ main div.informations div h2 a{
   font-family: 'Roboto', sans-serif;
 }
 
+main div.informations div a button{
+  width:180px;
+  height: 36px;
+  background-color: #de8496;
+  z-index: 1;
+  position: absolute;
+  top: 940px;
+  right: 130px;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+}
+
+main div.informations div button:hover{
+  background-color: white;
+  color: black;
+  border: solid #de8496 2px;
+}
+
 main div.productcontainer{
   display: flex;
   flex-direction: row;
@@ -157,6 +251,10 @@ main div.productcontainer{
   flex-wrap: wrap;
   width: 87%;
   margin: 50px auto;
+}
+
+main div.productcontainer a{
+  text-decoration: none;
 }
 
 main div.productcontainer img{
@@ -171,7 +269,6 @@ main div.productcontainer div {
   text-align: center;
   position: relative;
   margin: 5px 0;
-
 }
 
 main div.productcontainer div:hover img{
@@ -286,8 +383,141 @@ main div.productcontainer div span.price{
   font-size: 18px;
   justify-content: space-around;
   align-items: center;
-
+}
+.FOOTER a{
+  color:white;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
 }
 .FOOTER span{
   font-family: 'Roboto', sans-serif;
+}
+@media screen and (max-width : 1050px){
+  /*******************
+
+        HEADER
+
+  *******************/
+  header nav{display: none;}
+  header nav ul{display: none;}
+  header nav ul li {display: none;}
+  header nav ul li a {display: none;}
+  header nav ul li ul{display: none;}
+  header nav ul li ul li{display: none;}
+  header nav ul li ul li a {display: none;}
+  header {
+    background-color: #EDB2B2;
+    height: 185px;
+    margin: 0 auto;
+    width: 100%;
+    }
+  .socialnetworks img{
+    width: 25px;
+  }
+  #burgButt{
+    visibility: visible;
+    z-index: 15000;
+    width: 30px;
+    top: 40px;
+    left: 40px;
+  }
+  #burgMenu{
+    z-index: 15000;
+  }
+  header div.logo{
+    display: flex;
+    justify-content: center;
+  }
+
+  header div.logo img {
+    height: 95px;
+  }
+
+  /*******************
+
+        MAIN
+
+  *******************/
+
+  .informations{
+    position: absolute;
+    top: 443px;
+  }
+  .couture{
+    position: relative;
+  }
+  main div.informations div img{
+    position: absolute;
+    top: 0;
+    left: 100px;
+    width: 140px;
+  }
+
+  main div.informations div h2{
+    font-size: 18px;
+    position: absolute;
+    top: 10px;
+    left: 250px;
+    width: 600px;
+  }
+
+  main div.informations div a button{
+    position: absolute;
+    top: 75px;
+    width: 140px;
+    height: 30px;
+    font-size: 17px;
+  }
+
+  main div.productcontainer{
+    position: absolute;
+    top: 580px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  main div.lastdivs{
+    position: absolute;
+    top: 2010px;
+    margin: 20px auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+main div.lastdivs div{
+  height: 180px;
+  width: 45%;
+  margin: 0 10px;
+}
+
+  main div.lastdivs div p{
+    font-size: 15px;
+  }
+
+  main div.lastdivs div button{
+    font-size: 20px;
+    width: 200px;
+    height: 50px;
+    margin-top: 110px;
+  }
+
+  /*******************
+
+        FOOTER
+
+  *******************/
+
+  .FOOTER{
+    height: 144px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    font-size: 15px;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    top: 2230px;
+ }
 }

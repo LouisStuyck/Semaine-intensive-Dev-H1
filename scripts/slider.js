@@ -6,6 +6,9 @@ let lButton = document.getElementById('leftslider')
 let rButton = document.getElementById('rightslider')
 let imgProduct = document.getElementsByClassName('imgProduct')
 let product = document.getElementsByClassName('product')
+let burgButt = document.getElementById('burgButt')
+let burgMenu = document.getElementById('burgMenu')
+let v = 0
 let qLent = 0
 for (let i = 0; i < img.length; i++) {
   firstButton.addEventListener('click', () => {
@@ -88,4 +91,16 @@ secButton.addEventListener('mouseleave', () =>{
 })
 thirdButton.addEventListener('mouseleave', () =>{
   thirdButton.setAttribute ('src', 'images/sliderButton.png')
+})
+burgButt.addEventListener('click', () =>{
+  if (v === 0) {
+    burgMenu.style.visibility='visible'
+    v = 1
+    console.log(v);
+  }
+  else {
+    burgMenu.style.visibility='hidden'
+    v = 0
+    console.log(v);
+  }
 })

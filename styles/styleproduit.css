@@ -3,8 +3,8 @@
 }
 
 body {
-  margin: 0 auto;
   background: #FBF4F4;
+  margin: 0 auto;
 }
 /*******************
 
@@ -14,18 +14,91 @@ body {
 
 header {
   background-color: #EDB2B2;
-  height: 204px;
-  margin: 0 auto;
+  width: 100%;
+}
+.socialnetworks{
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+.socialnetworks img{
+  width: 40px;
+}
+#burgButt{
+  position: absolute;
+  visibility: hidden;
+}
+#burgMenu{
+  visibility: hidden;
+  position: absolute;
+  z-index: 16000;
+}
+header .menuVert{
+  background-color: #DE8496;
+  height: 361px;
+  width: 261px;
+  margin:0 auto;
+  color: white;
+  font-size: 22px;
+}
+header .menuVert ul{
+  margin : 0 auto;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-direction: column;
+  padding:0;
 }
 
-header div.logo_account{
+header .menuVert ul li {
+  padding: 15px 30px;
+  position: relative;
+}
+
+header .menuVert ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+header .menuVert ul li:hover{
+  background:white;
+  transition:all 0.2s ease-in;
+}
+
+header .menuVert ul li:hover a {
+  text-decoration: none;
+  color: black;
+}
+
+header div.logo{
   display: flex;
   justify-content: center;
-  margin-bottom: 19px;
 }
 
-header div.logo_account img {
+header div.logo img {
   height: 125px;
+}
+
+header div.account{
+  position: absolute;
+  right: 100px;
+  height: 50px;
+  top: 30px;
+}
+
+header div.account a{
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center;
+}
+
+header div.account a:hover{
+  color: white;
+}
+
+header div.account a img{
+  width: 50px;
 }
 
 header nav{
@@ -35,6 +108,7 @@ header nav{
   display: flex;
   justify-content: space-between;
   color: white;
+  font-size: 22px;
 }
 header nav ul{
   margin : 0 auto;
@@ -46,7 +120,7 @@ header nav ul{
 }
 
 header nav ul li {
-  padding: 20px 30px;
+  padding: 15px 30px;
   position: relative;
 }
 
@@ -69,9 +143,8 @@ header nav ul li ul{
   display: none;
   position: absolute;
   margin: 0;
-  top: 100%;
-  left:0px;
-  padding:0;
+  top: 92%;
+  left: -200px;
 }
 
 header nav ul li:hover ul{
@@ -80,10 +153,11 @@ header nav ul li:hover ul{
 
 header nav ul li ul li{
   background:#DE8496;
-  width : 200px;
+  width : 250px;
+  text-align:center;
   text-decoration: none;
   display:block;
-  padding:10px;
+  padding: 10px;
   transition:all 0.2s ease-in;
   position:relative;
   margin: 0 auto;
@@ -95,7 +169,7 @@ header nav ul li ul li:hover{
 }
 
 header nav ul li ul li a {
-  margin:0 0 0 20px;
+  margin:0 0 0 ;
 }
 
 header nav ul li ul li:hover a {
@@ -109,52 +183,114 @@ header nav ul li ul li:hover a {
 
 *******************/
 
-main div.block {
-
-  flex-direction: row;
-
-  width: 80%;
+main div.container{
+  width:70%;
+  height: 550px;
   margin: 50px auto;
-}
-
-main div.block img{
-  height: 445px;
-  float:left;
-  border-right: solid #de8496 2px;
-}
-
-main div.block div{
   background-color: white;
-  color: black;
-  font-family: sans-serif;
-  height: 445px;
-  width: 100%;
-  border: solid #de8496 2px;
-  text-align: center;
+  display: flex;
 }
 
-main div.block div span{
-  font-size: 36px;
+main div div.imgContainer{
+  width: 40%;
+  display: flex;
+  justify-content: center;
 }
 
-main div.block div button {
+main div.container img{
+  width:100%;
+  height: 100%;
+  margin-left: 80px;
+}
+
+main div div.littleContainer{
+  width: 60%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px;
+}
+
+main div div h1{
+  margin:0;
+}
+
+main div div h2{
+  margin:0;
+}
+
+main div div div.textContainer{
+  margin:40px 0 20px 0;
+}
+
+main div div div.price{
+  margin-bottom: 20px;
+}
+
+main div div a button{
+  width:180px;
+  height: 36px;
   background-color: #de8496;
-  font-size: 30px;
-  height: 56px;
-  width: 233px;
-  color: white;
+  font-size: 18px;
   border: none;
   border-radius: 10px;
+  color: white;
 }
 
-main div.block div button:hover {
+main div div a button:hover{
   background-color: white;
   color: black;
   border: solid #de8496 2px;
+  transition:all 0.2s ease-in;
 }
 
-main div.block div span.price {
-  font-weight: bolder;
+main div.qualityContainer{
+  width: 70%;
+  margin: 20px auto;
+  display: flex;
+}
+
+main div div.respect{
+  display: flex;
+  justify-content: flex-start;
+  padding: 0 100px;
+}
+
+main div div.respect h3{
+  margin: 25px 0 0 30px;
+  font-family: 'Roboto', sans-serif;
+}
+
+main div div.fr{
+  margin : 20px 0 0 250px;
+}
+
+main div.collectionContainer{
+  width:70%;
+  height: 460px;
+  margin: 50px auto;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+main div div.otherProduct{
+  display: flex;
+  justify-content: space-around;
+}
+
+main div div.productSupp{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+main div div.otherProduct img{
+  width:300px;
+  height: 300px;
 }
 
 /*******************
@@ -162,3 +298,160 @@ main div.block div span.price {
       FOOTER
 
 *******************/
+
+.FOOTER{
+  height: 144px;
+  width: 100%;
+  background-color: #DE8496;
+  color: white;
+  display: flex;
+  font-size: 18px;
+  justify-content: space-around;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.FOOTER a{
+  text-decoration: none;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+.FOOTER span{
+  font-family: 'Roboto', sans-serif;
+}
+
+@media screen and (max-width : 1050px){
+  /*******************
+
+        HEADER
+
+  *******************/
+  header nav{display: none;}
+  header nav ul{display: none;}
+  header nav ul li {display: none;}
+  header nav ul li a {display: none;}
+  header nav ul li ul{display: none;}
+  header nav ul li ul li{display: none;}
+  header nav ul li ul li a {display: none;}
+  header {
+    background-color: #EDB2B2;
+    height: 185px;
+    margin: 0 auto;
+    width: 100%;
+
+  }
+  .socialnetworks img{
+    width: 25px;
+  }
+  #burgButt{
+    visibility: visible;
+    z-index: 15000;
+    width: 30px;
+    top: 40px;
+    left: 40px;
+  }
+  #burgMenu{
+    z-index: 15000;
+  }
+  header div.logo{
+    display: flex;
+    justify-content: center;
+  }
+
+  header div.logo img {
+    height: 95px;
+  }
+
+  header{
+    height:115px;
+  }
+  /*******************
+
+         MAIN
+
+  *******************/
+
+  main div.container{
+    height: 650px;
+    margin: 50px 0;
+    width: 100%;
+  }
+
+  main div.container div img{
+    margin-left: 60px;
+    width: 140%;
+  }
+
+  main div div h1{
+    font-size: 44px;
+  }
+
+  main div div h2{
+    font-size: 38px;
+  }
+
+  main div div div.textContainer{
+    margin: 10px 0 0 0;
+  }
+
+  main div div p{
+    font-size: 22px;
+  }
+
+  main div div div.price{
+     margin-bottom: 10px;
+  }
+
+  main div div div.price h2{
+    font-size: 24px;
+  }
+
+  main div div a button{
+    width: 160px;
+    height: 40px;
+    font-size: 17px;
+  }
+
+  main.qualityContainer{
+    margin:0 auto;
+  }
+
+  main div div.respect{
+    width: 310px;
+    font-size: 11px;
+    padding:0;
+  }
+
+  main div div.fr{
+    margin-left:0;
+  }
+
+  main div.collectionContainer{
+    font-size: 14px;
+    margin: 0 auto 30px auto;
+    height: 800px;
+  }
+
+  main div div.otherProduct{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  main div div.otherProduct div{
+    width: 50%;
+  }
+
+  main div div.otherProduct img{
+    width: 100%;
+  }
+  /*******************
+
+        FOOTER
+
+  *******************/
+
+  .FOOTER{
+    font-size: 13px;
+  }
